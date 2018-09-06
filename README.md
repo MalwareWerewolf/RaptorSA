@@ -23,7 +23,7 @@ As many of you know i can't provide my Api Keys, because i could compromise my s
 * Make a folder and git clone this repository: [RaptorSA.git]https://github.com/Cramenorn/RaptorSA.git
 * Then type "npm install" to get the needed packages (see the next section) for the bot
 
-# Needed Packages
+# Needed Packages:
 
 * [cheerio](https://github.com/cheeriojs/cheerio)
 * [discord.js](https://github.com/discordjs/discord.js/)
