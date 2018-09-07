@@ -5,7 +5,7 @@ This Discord bot can be helpful for anyone who wants to learn how to make a disc
 to read the entire project. 
 I made this so new users can also look at the methods used for certain commands and get some ideas for their Discord bot.
 When i was developing the bot i was totally new to node js, i did not even know what was an arrow function. At some point 
-i learnt discord.js api and node js thanks to various tutorials that i found on internet.
+i learnt discord.js api and node js thanks to various tutorials that i found on internet. In the next days i will publish the entire project.
 
 # Api keys and tokens
 
