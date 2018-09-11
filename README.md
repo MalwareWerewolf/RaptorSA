@@ -21,9 +21,9 @@ As many of you know i can't provide my Api Keys, because i could compromise my s
 
 * You will need [FFmpeg](https://www.ffmpeg.org/) for the play, stop and skip commands, as ytdl-core package needs ffmpeg or it will not work.
 * Make a folder and git clone this repository: [RaptorSA.git]https://github.com/Cramenorn/RaptorSA.git
-* Then type "npm install" to get the needed packages (see the next section) for the bot
-* Edit json files in jsonFiles folder, you need a discord bot token and various Api Keys to get the bot work
-* Launch the index.js file
+* Then type "npm install" to get the needed packages (see the next section) for the bot.
+* Edit json files in jsonFiles folder, you need a discord bot token and various Api Keys to get the bot work.
+* Launch the index.js file.
 
 # Needed Packages:
 * [googleapis](https://github.com/googleapis/google-api-nodejs-client)
@@ -94,3 +94,7 @@ As many of you know i can't provide my Api Keys, because i could compromise my s
 # Built with:
 * [Discord.js](https://discord.js.org/#/)
 * [Node js](https://nodejs.org/en/)
+
+# Known issues:
+
+The google command is not 100% correct, if you do a search query the first result will be correct, but from second above the googleResults.json will corrupt itself. This simply means you will get a wrong query.
