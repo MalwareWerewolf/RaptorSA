@@ -261,8 +261,8 @@
         "name":"google",
         "group":"randomstuff",
         "desc":"Get 3 search queries from Google Custom Search, you need to provide in the json file called googleConfig, your Custom Search Api Key and you CX",
-        "usage":"$google",
-        "example":"$google"
+        "usage":"$google [SearchQuery]",
+        "example":"$google dogs"
     },
 
     "ping":{
