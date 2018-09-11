@@ -59,7 +59,7 @@
         "name":"csgo",
         "group":"games",
         "desc":"Get csgo stats for an user given by STEAMID64",
-        "usage":"$csgo [myID]",
+        "usage":"$csgo [mySteamID]",
         "example":"$csgo 76561197960273869"
     },
 
@@ -261,7 +261,7 @@
         "name":"google",
         "group":"randomstuff",
         "desc":"Get 3 search queries from Google Custom Search, you need to provide in the json file called googleConfig, your Custom Search Api Key and you CX",
-        "usage":"$google [SearchQuery]",
+        "usage":"$google [query]",
         "example":"$google dogs"
     },
 
