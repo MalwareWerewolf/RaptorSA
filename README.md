@@ -20,7 +20,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 # What do i need to make the bot work ?
 
 * You will need [FFmpeg](https://www.ffmpeg.org/) for the play, stop and skip commands, as ytdl-core package needs ffmpeg or it will not work.
-* Make a folder and git clone this repository: [RaptorSA.git]https://github.com/Cramenorn/RaptorSA.git
+* Make a folder and git clone this repository: [RaptorSA.git](https://github.com/Cramenorn/RaptorSA.git)
 * Then type **npm install** to get the needed packages (see the next section) for the bot.
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the **index.js** file.
@@ -51,7 +51,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 
 ## Games
 
-* **$csgo [MyID]** - Get csgo stats for an user given by STEAMID64.
+* **$csgo [MySteamID]** - Get csgo stats for an user given by STEAMID64.
 * **$csgofloat [inspect Url]** - Get informations about a skin or a weapon.
 * **$lolcprot** - Display the current champion rotation in EU West.
 * **$loltopfive [SummonerID]** - Display the top 5 played champions of a summoner, based on the SummonerID. You can find your SummonerID at http://www.lolking.net/
@@ -72,7 +72,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * **$pause** - Pause the currently playing song.
 * **$resume** - Resume the currently playing song.
 * **$playother [StreamUrl]** - Play a stream url.
-* **$playtube [youtubeUrl]** - $playtube https://www.youtube.com/watch?v=BmxCR4_abd4
+* **$playtube [youtubeUrl]** - Play an youtube video.
 * **$queue** - List the songs in queue.
 * **$skip** - Skip the current playing song.
 * **$stop** - The bot leaves the voice channel.
