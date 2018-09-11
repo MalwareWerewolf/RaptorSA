@@ -24,7 +24,7 @@ As many of you know i can't provide my Api Keys, because i could compromise my s
 * Then type "npm install" to get the needed packages (see the next section) for the bot
 
 # Needed Packages:
-
+* [googleapis](https://github.com/googleapis/google-api-nodejs-client)
 * [cheerio](https://github.com/cheeriojs/cheerio)
 * [discord.js](https://github.com/discordjs/discord.js/)
 * [enmap](https://github.com/eslachance/enmap)
