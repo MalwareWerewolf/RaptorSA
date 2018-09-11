@@ -1,4 +1,4 @@
-# Super advanced discord bot
+# Super advanced discord bot ![alt text](https://i.imgflip.com/xu2ct.jpg)
 
 **RaptorSA** is a multi function bot, you can listen music, manage roles, get various informations and many other things. 
 This Discord bot can be helpful for anyone who wants to learn how to make a discord.js bot, every command has it's own folder so it's more easy
