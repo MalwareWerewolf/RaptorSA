@@ -58,7 +58,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 
 ## Info
 
-* **$help or $help [commandName]** - isplay the list of commands if you just type $help or if you type $help commandName display the current command info.
+* **$help or $help [commandName]** - Display the list of commands if you just type $help or if you type $help commandName display the current command info.
 * **$serverinfo** - Get server info.
 * **$serverinvite [ChannelID]** - Get an invite for the server, but you must type the channelID to get the command work.
 * **$uptime** - Get bot uptime.
