@@ -25,7 +25,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the **index.js** file.
 
-# Needed Packages:
+# Needed Packages
 * [googleapis](https://github.com/googleapis/google-api-nodejs-client)
 * [cheerio](https://github.com/cheeriojs/cheerio)
 * [discord.js](https://github.com/discordjs/discord.js/)
@@ -91,10 +91,10 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * **$setafk [status]** - Set your status afk or notafk.
 * **$weather [location]** - Get the forecast information for a location.
 
-# Built with:
+# Built with
 * [Discord.js](https://discord.js.org/#/)
 * [Node js](https://nodejs.org/en/)
 
-# Known issues:
+# Known issues
 
 The google command is not 100% correct, if you do a search query the first result will be correct, but from second above the googleResults.json will corrupt itself. This simply means you will get a wrong query.
