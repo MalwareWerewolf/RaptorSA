@@ -11,9 +11,9 @@ i learnt discord.js api and node js thanks to various tutorials that i found on 
 
 If you want help, don't worry, there are many ways to do it:
 
-**Contribute with code**: Setup a development environment, make some changes, and [open a pull request](https://github.com/Cramenorn/RaptorSA/pulls).
+* **Contribute with code**: Setup a development environment, make some changes, and [open a pull request](https://github.com/Cramenorn/RaptorSA/pulls).
 
-**Contribute with ideas**: Have a great idea, but don't know how to code ? No problem! Open an issue so we can talk about your idea.
+* **Contribute with ideas**: Have a great idea, but don't know how to code ? No problem! Open an issue so we can talk about your idea.
 
 # Branching
 
