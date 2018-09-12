@@ -7,6 +7,18 @@ I made this so new users can also look at the methods used for certain commands 
 When i was developing the bot i was totally new to node js, i did not even know what was an arrow function. Day by day 
 i learnt discord.js api and node js thanks to various tutorials that i found on internet.
 
+# Contributing
+
+If you want help, don't worry, there are many ways to do it:
+
+**Contribute with code**: Setup a development environment, make some changes, and [open a pull request](https://github.com/Cramenorn/RaptorSA/pulls).
+
+**Contribute with ideas**: Have a great idea, but don't know how to code ? No problem! Open an issue so we can talk about your idea.
+
+# Branching
+
+New Pull Requests should be made upon the **testing** branch. If the code does not have any particular issues, then it will be merged into **master** branch.
+
 # Api keys and tokens
 
 Some commands require an **Api Key** or a **Token** which can be find on these websites: 
