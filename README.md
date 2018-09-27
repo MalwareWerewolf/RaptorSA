@@ -37,18 +37,6 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the **index.js** file.
 
-# Needed Packages
-* [googleapis](https://github.com/googleapis/google-api-nodejs-client)
-* [cheerio](https://github.com/cheeriojs/cheerio)
-* [discord.js](https://github.com/discordjs/discord.js/)
-* [enmap](https://github.com/eslachance/enmap)
-* [get-json](https://github.com/zeke/get-json)
-* [geolib](https://github.com/manuelbieh/Geolib)
-* [jimp](https://github.com/oliver-moran/jimp)
-* [yql](https://developer.yahoo.com/weather/?guccounter=1#nodejs)
-* [ytdl-core](https://github.com/fent/node-ytdl-core)
-* [yt-search](https://github.com/talmobi/yt-search)
-
 # Commands
 
 ## Admin
