@@ -1,6 +1,6 @@
 {
   "name": "raptorsa-master",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "RaptorSA is a multi function bot.",
   "main": "index.js",
   "dependencies": {
