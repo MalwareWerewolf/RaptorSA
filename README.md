@@ -45,6 +45,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * **$ban [user] [reason]** - Ban an user from the server.
 * **$deletemsg [number]** - Delete an amount of messages, the number must be between 2 and 100.
 * **$kick [user] [reason]** - Kick an user from the server.
+* **$mute [user] [ms]** - Mute an user for a specific amount of time, you have to create a new role called mute to make the command work.
 * **$removerole [user] [role]** - Remove a role of an user.
 * **$setbotname [name]** - Set a name for the bot.
 * **$setbotstatus [status]** - Set bot status.
