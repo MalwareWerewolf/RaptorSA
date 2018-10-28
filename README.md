@@ -78,7 +78,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * **$skip** - Skip the current playing song.
 * **$stop** - The bot leaves the voice channel.
 * **$volume [Number]** - Set bot volume in the voice channel, you must type a number betweem 0-200.
-* **$ytsearch [SongName]** hit enter then type a **number** - Search for a song on youtube, then type a number betweem 1-20 (or less) from a list of 20 songs.
+* **$ytsearch [SongName]** hit enter then type a **number** - Search for a song on youtube, then type a number between 1-20 (or less).
 
 ## Random stuff
 
