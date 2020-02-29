@@ -1,9 +1,9 @@
 {
   "name": "RaptorSA",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RaptorSA is a multi function bot, you can listen music, manage roles, get various informations and many other things :)",
   "main": "index.js",
-  "token": "You wanted",
+  "token": "you wanted",
   "author": "Cramenorn",
   "prefix": "$",
   "dependencies": {
