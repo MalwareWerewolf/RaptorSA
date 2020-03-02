@@ -1,11 +1,6 @@
 # Super advanced discord bot ![alt text](https://i.imgflip.com/xu2ct.jpg)
 
-**RaptorSA** is a multi function bot, you can listen music, manage roles, get various informations and many other things. 
-This Discord bot can be helpful for anyone who wants to learn how to make a discord.js bot, every command has it's own folder so it's more easy
-to read the entire project. 
-I made this so new users can also look at the methods used for certain commands and get some ideas for their Discord bot.
-When i was developing the bot i was totally new to node js, i did not even know what was an arrow function. Day by day 
-i learnt discord.js api and node js thanks to various tutorials that i found on internet.
+**RaptorSA** is a multi function bot, you can listen music, manage roles, get various informations and many other things. This Discord bot can be helpful for anyone who wants to learn how to make a discord.js bot, every command has it's own folder so it's more easy to read the entire project. I made this so new users can also look at the methods used for certain commands and get some ideas for their Discord bot. When I was developing the bot I was totally new to node js, I did not even know what was an arrow function. Day by day I learnt discord.js api and node js thanks to various tutorials that I found on internet.
 
 # Contributing
 
@@ -99,3 +94,11 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 # Known issues
 
 The google command is not 100% correct, if you do a search query the first result will be correct, but from second above the googleResults.json will corrupt itself. This simply means you will get a wrong query.
+
+## Why the bot does not play music in a voice channel ?
+
+First of all, check if you have installed [FFmpeg](https://www.ffmpeg.org/) and the node modules. If everything is correct but the bot is still not playing the music, open the cmd or terminal and navigate to the root of your repository and type **npm update**.
+
+## Why the music quality is bad ?
+
+There is a Bitrate setting on each voice channel which is defaulted to 64kbps. Click the gear sign next to the voice channel to go to the channel settings and make sure your Bitrate is as high as it will allow. According to GitHub issues on other repositories, Discord channels can reach 96kbps and partnered discord servers can be set up to 128kbps. The music quality also depends from the connection.
