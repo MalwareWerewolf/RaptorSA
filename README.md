@@ -32,6 +32,30 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the **index.js** file.
 
+# Packages
+
+```json
+"discord.js": "^11.6.0",
+"discord.js-commando": "^0.10.0",
+"discord.js-music-v11": "^1.3.4",
+"enmap": "^5.2.4",
+"express": "^4.17.1",
+"ffmpeg-binaries": "^4.0.0",
+"fotology-x": "^1.2.4",
+"geolib": "^3.2.1",
+"get-json": "^1.0.1",
+"google-search-results-nodejs": "^1.3.0",
+"googleapis": "^47.0.0",
+"jimp": "^0.9.3",
+"moment": "^2.24.0",
+"opusscript": "^0.0.7",
+"overwatch-js": "^1.8.0",
+"request": "^2.88.2",
+"yql": "^1.0.2",
+"yt-search": "^1.1.2",
+"ytdl-core": "^2.0.0"
+```
+
 # Commands
 
 ## Admin
