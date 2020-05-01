@@ -52,7 +52,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 "request": "^2.88.2",
 "yql": "^1.0.2",
 "yt-search": "^1.1.2",
-"ytdl-core": "^2.0.0"
+"ytdl-core": "^2.1.1"
 ```
 
 # Commands
