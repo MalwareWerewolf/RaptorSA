@@ -49,7 +49,6 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 "jimp": "^0.9.3",
 "moment": "^2.24.0",
 "opusscript": "^0.0.7",
-"overwatch-js": "^1.8.0",
 "request": "^2.88.2",
 "yql": "^1.0.2",
 "yt-search": "^1.1.2",
