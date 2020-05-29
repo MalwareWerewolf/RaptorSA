@@ -41,6 +41,10 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the `index.js` file.
 
+## Commands
+
+See the [Commands](https://github.com/Cramenorn/RaptorSA/wiki/Commands) page.
+
 # Built with
 * [Discord.js](https://discord.js.org/#/)
 * [Node js](https://nodejs.org/en/)
