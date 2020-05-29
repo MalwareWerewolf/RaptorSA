@@ -14,7 +14,7 @@ If you want help, don't worry, there are many ways to do it:
 
 * **Contribute with ideas**: Have a great idea, but don't know how to code ? No problem! Open an issue so we can talk about your idea.
 
-# Branching
+## Branching
 
 New Pull Requests should be made upon the **testing** branch. If the code does not have any particular issues, then it will be merged into **master** branch.
 
@@ -37,7 +37,7 @@ As many of you know i can't provide my **Api Keys**, because i could compromise 
 * You will need [FFmpeg](https://www.ffmpeg.org/) for the play, stop and skip commands, as ytdl-core package needs ffmpeg or it will not work.
 * Make a folder and git clone this repository: [RaptorSA.git](https://github.com/Cramenorn/RaptorSA.git).
 * Then type **npm install** to get the needed packages (see the next section) for the bot.
-* Check if ytdl-core is updated with the following command npm outdated, if the current version is not updated to the last, type `npm update ytdl-core`
+* Check if ytdl-core is updated with the following command `npm outdated`, if the current version is not updated to the latest, type `npm update ytdl-core`
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the `index.js` file.
 
