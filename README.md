@@ -30,14 +30,15 @@ Some commands require an **Api Key** or a **Token** which can be find on these w
 * [Riot Games Developer](https://developer.riotgames.com/)
 * [Discord Developer to get the token for the bot](https://discordapp.com/developers/applications/)
 
-As many of you know i can't provide my **Api Keys**, because i could compromise my security.
-
-# What do i need to make the bot work ?
+# What do I need to make the bot work ?
 
 * You will need [FFmpeg](https://www.ffmpeg.org/) for the play, stop and skip commands, as ytdl-core package needs ffmpeg or it will not work.
 * Make a folder and git clone this repository: [RaptorSA.git](https://github.com/Cramenorn/RaptorSA.git).
-* Then type **npm install** to get the needed packages (see the next section) for the bot.
-* Check if ytdl-core is updated with the following command `npm outdated`, if the current version is not updated to the latest, type `npm update ytdl-core`
+* Before typing `npm install`, you should check the **package.json** file. The installation process is different if you choose one of the two packages:
+    * If you are going to use the bot in a production environment you should use the `@discordjs/opus`, in this case you do not need to edit the package.json file. Before typing `npm install`, this package requires the C++ tools, on Windows 10 you simply need to download Visual Studio and install the [Windows desktop development with C++ tool](https://devblogs.microsoft.com/cppblog/windows-desktop-development-with-c-in-visual-studio/#installation). 
+    * For testing purposes you should use the following package `"opusscript": "^0.0.7"` (change **@discordjs/opus** package with **opusscript**, they can't work together, you need to use one of them), you do not need to do anything in particular. You can directly install the packages as specified in the next step below.
+* Then type `npm install` to get the needed packages for the bot.
+* Check if **ytdl-core** is updated with the following command `npm outdated`, if the current version is not updated to the latest, type `npm update ytdl-core` and update the package.json file.
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the `index.js` file.
 

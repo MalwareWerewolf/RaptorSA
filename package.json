@@ -17,7 +17,7 @@
     "googleapis": "^47.0.0",
     "jimp": "^0.9.3",
     "moment": "^2.24.0",
-    "opusscript": "^0.0.7",
+    "@discordjs/opus": "^0.3.2",
     "request": "^2.88.2",
     "yql": "^1.0.2",
     "yt-search": "^1.1.2",
