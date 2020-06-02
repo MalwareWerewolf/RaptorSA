@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
     const setStatus = message.content.split(' ');
 
-    if(!message.member.hasPermission("ADMINISTATOR")){
+    if(!message.member.hasPermission("ADMINISTRATOR")){
         return message.channel.send("You don't have the permissions to use this command!");
     }
 

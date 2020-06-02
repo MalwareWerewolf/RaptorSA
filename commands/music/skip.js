@@ -1,13 +1,14 @@
 exports.run = async (client, message, args, ops) => {
     let fetched = ops.active.get(message.guild.id);
+    let voiceChannel = message.member.voice.channel;
     
     if(!fetched)
         return message.channel.send("There isn't any music playing in this guild!");
     
-    if(!message.member.voiceChannel)
+    if(!voiceChannel)
         return message.channel.send("You are not in a voice channel");        
 
-    let userCount = message.member.voiceChannel.members.size;
+    let userCount = voiceChannel.members.size;
     
     let required = Math.ceil(userCount/2);
 

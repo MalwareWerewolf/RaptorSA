@@ -19,7 +19,7 @@ exports.run = (client, message, args) =>{
 
     ];
 
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
         .setColor("#15f153")
         .setDescription(`Oh look i found a cuty dog :dog:`)
         .setImage(dogs[Math.floor(Math.random()*dogs.length)]);

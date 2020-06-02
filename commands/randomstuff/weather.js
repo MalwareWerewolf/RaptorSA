@@ -5,7 +5,7 @@ exports.run = (client, message, args) =>{
     const city = message.content.split(' '); 
 
     if(isNaN(city[1])){
-        var query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="'+city[1]+'") and u = "f"');
+        var query = new YQL('select * from geo.places where text="'+city[1]+'"');
     }
 
     else{
@@ -15,7 +15,8 @@ exports.run = (client, message, args) =>{
     
     query.exec(function(err, data) {
         try{
-            var linkForecast = data.query.results.channel;
+            var linkForecast = data.query.results;
+            console.log(linkForecast);
             var location = data.query.results.channel.location;
             var wind = data.query.results.channel.wind;
             var atmosphere = data.query.results.channel.atmosphere;
@@ -28,6 +29,7 @@ exports.run = (client, message, args) =>{
         }
 
         catch(error){
+            console.log(error);
             return message.channel.send("I could not find the weather.");
         }
 

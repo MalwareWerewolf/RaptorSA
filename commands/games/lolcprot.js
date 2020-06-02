@@ -4,7 +4,7 @@ const fs = require('fs');
 var getJSON = require('get-json');
 
 exports.run = async (client, message, args) => {
-    const member = message.mentions.members.first() || message.guild.members.get(args[0]) || message.member;
+    const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
     var myChampions = [];
     var championId = "";
     var dataToPush = "";
@@ -20,7 +20,7 @@ exports.run = async (client, message, args) => {
                 myChampions.push(dataToPush);
             }
 
-            var embed = new Discord.RichEmbed()
+            var embed = new Discord.MessageEmbed()
                 .addField("Free champion rotation: ", myChampions.join('\n'), true)
                 .addField("Requested by: ", `${member.user.tag}`)
                 .addField("Powered by: ", `[developer.riotgames.com](https://developer.riotgames.com/)`)

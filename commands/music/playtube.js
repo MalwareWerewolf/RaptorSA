@@ -1,7 +1,7 @@
 const ytdl = require('ytdl-core');
 
 exports.run = async (client, message, args, ops) => {
-    voiceChannel = message.member.voiceChannel;
+    voiceChannel = message.member.voice.channel;
     if(!voiceChannel)
         return message.channel.send("You are not in a voice channel");
     const permissions = voiceChannel.permissionsFor(message.client.user);
@@ -20,7 +20,7 @@ exports.run = async (client, message, args, ops) => {
     let data = ops.active.get(message.guild.id) || {};
 
     if(!data.connection) 
-        data.connection = await message.member.voiceChannel.join();
+        data.connection = await message.member.voice.channel.join();
     if(!data.queue)
         data.queue = [];
     data.guildID = message.guild.id;
@@ -34,17 +34,15 @@ exports.run = async (client, message, args, ops) => {
 
     if(!data.dispatcher) play(client, ops, data);
 
-    else{
+    else
         message.channel.send(`Added to queue: **${info.title}** | requested by **${message.author.username}**`);
-
-    }
 
     ops.active.set(message.guild.id, data);
 }
 
 async function play(client, ops, data){
 
-    data.dispatcher = await data.connection.playStream(ytdl(data.queue[0].url, {filter: 'audioonly'}));
+    data.dispatcher = await data.connection.play(ytdl(data.queue[0].url, {filter: 'audioonly'}));
 
     data.dispatcher.guildID = data.guildID;
 

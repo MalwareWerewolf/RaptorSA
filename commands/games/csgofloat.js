@@ -2,7 +2,7 @@ const Discord = module.require('discord.js');
 var getJSON = require('get-json');
 
 exports.run = async (client, message, args) => {
-    const member = message.mentions.members.first() || message.guild.members.get(args[0]) || message.member;
+    const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
     if(!args){
         return message.channel.send(":x: " + "| Please enter an inspect link for your awesome skin/weapon");
     }
@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
                 return message.channel.send(":x: " + "| Please enter a valid inspect link for your awesome skin/weapon");
             }
 
-            var embed = new Discord.RichEmbed()
+            var embed = new Discord.MessageEmbed()
                 .addField("Weapon Name: ", data.iteminfo.weapon_type, true)
                 .addField("Weapon Skin Name: ", data.iteminfo.item_name, false)
                 .addField("Float Value: ", data.iteminfo.floatvalue, true)

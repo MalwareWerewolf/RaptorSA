@@ -32,10 +32,10 @@ Some commands require an **Api Key** or a **Token** which can be find on these w
 
 # What do I need to make the bot work ?
 
-* You will need [FFmpeg](https://www.ffmpeg.org/) for the play, stop and skip commands, as ytdl-core package needs ffmpeg or it will not work.
+* You will need [python 2.7](https://www.python.org/downloads/) and [FFmpeg](https://www.ffmpeg.org/), **Discord.js now requires Node version greater than or equal to 12.0.0** .
 * Make a folder and git clone this repository: [RaptorSA.git](https://github.com/Cramenorn/RaptorSA.git).
 * Before typing `npm install`, you should check the **package.json** file. The installation process is different if you choose one of the two packages:
-    * If you are going to use the bot in a production environment you should use the `@discordjs/opus`, in this case you do not need to edit the package.json file. Before typing `npm install`, this package requires the C++ tools, on Windows 10 you simply need to download Visual Studio and install the [Windows desktop development with C++ tool](https://devblogs.microsoft.com/cppblog/windows-desktop-development-with-c-in-visual-studio/#installation). 
+    * If you are going to use the bot in a production environment you should use the `@discordjs/opus`, in this case you do not need to edit the package.json file. Before typing `npm install`, this package requires the C++ tools, on Windows 10 you simply need to download Visual Studio and install the [Windows desktop development with C++ tool](https://devblogs.microsoft.com/cppblog/windows-desktop-development-with-c-in-visual-studio/#installation).
     * For testing purposes you should use the following package `"opusscript": "^0.0.7"` (change **@discordjs/opus** package with **opusscript**, they can't work together, you need to use one of them), you do not need to do anything in particular. You can directly install the packages as specified in the next step below.
 * Then type `npm install` to get the needed packages for the bot.
 * Check if **ytdl-core** is updated with the following command `npm outdated`, if the current version is not updated to the latest, type `npm update ytdl-core` and update the package.json file.

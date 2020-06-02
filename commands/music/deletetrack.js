@@ -1,4 +1,4 @@
-exports.run = async (client, message, args, ops) => {
+exports.run = (client, message, args, ops) => {
     const audioUrl = message.content.split(' ');
     var convertTrack;
 

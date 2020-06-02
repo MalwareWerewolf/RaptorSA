@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
     const url = message.content.split(' ');  
-    const embed = new Discord.RichEmbed();
-    voiceChannel = message.member.voiceChannel;
+    const embed = new Discord.MessageEmbed();
+    voiceChannel = message.member.voice.channel;
 
     if(!voiceChannel)
         return message.channel.send("You are not in a voice channel");
@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
         return message.channel.send("You did not paste radio url!");
     } 
     
-    message.member.voiceChannel.join().then(connection => {
+    message.member.voice.channel.join().then(connection => {
         require('http').get(url[1], (res) => {
             connection.playStream(res);
             embed.setColor("#b92727");

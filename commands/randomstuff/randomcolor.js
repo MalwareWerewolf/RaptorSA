@@ -26,10 +26,10 @@ exports.run = (client, message, args) => {
         console.error(err);
     });
 
-    const embed = new Discord.RichEmbed()    
+    const embed = new Discord.MessageEmbed()    
         .addField("Hex",`${hexColor}`)
         .addField("RGB", colorResult)
-        .attachFile(newImageColor);
+        .attachFiles(newImageColor);
     
     message.channel.send({embed});
 }

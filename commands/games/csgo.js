@@ -48,7 +48,7 @@ exports.run = async (client, message, args) => {
         var BD = getStatData(14, $);
         var HR = getStatData(15, $);
 
-        var embed = new Discord.RichEmbed()
+        var embed = new Discord.MessageEmbed()
             .setTitle("__***CSGO Stats***__")
             .setURL(UR_L)
             .addField("Current stats",

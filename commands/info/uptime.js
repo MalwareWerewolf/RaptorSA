@@ -30,7 +30,7 @@ exports.run = (client, message, args) =>{
 
     uptime += `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
 
-    let serverembed = new Discord.RichEmbed()
+    let serverembed = new Discord.MessageEmbed()
         .setColor("#228B22")
         .addField('Uptime', uptime);
 

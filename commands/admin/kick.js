@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-    let member = message.mentions.members.first() || message.guild.members.get(args[0]);
+    let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
 
     if(!message.member.hasPermission("KICK_MEMBERS")){
         message.channel.send("You don't have the permissions to use this command!");
