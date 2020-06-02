@@ -1,5 +1,4 @@
 exports.run = async (client, message, args, ops) => {
-    let = message.voice.channel;
     let fetched = ops.active.get(message.guild.id);
     
     if(!fetched)

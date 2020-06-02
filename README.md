@@ -32,6 +32,8 @@ Some commands require an **Api Key** or a **Token** which can be find on these w
 
 # What do I need to make the bot work ?
 
+## Manual installation
+
 * You will need [python 2.7](https://www.python.org/downloads/) and [FFmpeg](https://www.ffmpeg.org/), **Discord.js now requires Node version greater than or equal to 12.0.0** .
 * Make a folder and git clone this repository: [RaptorSA.git](https://github.com/Cramenorn/RaptorSA.git).
 * Before typing `npm install`, you should check the **package.json** file. The installation process is different if you choose one of the two packages:
@@ -42,7 +44,20 @@ Some commands require an **Api Key** or a **Token** which can be find on these w
 * Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
 * Launch the `index.js` file.
 
-## Commands
+## Docker
+
+### How do I install Docker ?
+
+The process is different on every OS, you can check the [official documentation](https://docs.docker.com/get-docker/) for more informations.
+
+### How do I use Docker ?
+
+If you want to skip the previous step you can use docker, in this way you do not need to install other tools on your computer. To use the container, run the following commands inside the RaptorSA folder:
+
+* `docker build -t raptorsa .`
+* `docker run raptorsa`
+
+# Commands
 
 See the [Commands](https://github.com/Cramenorn/RaptorSA/wiki/Commands) page.
 

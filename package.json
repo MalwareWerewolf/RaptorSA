@@ -42,5 +42,10 @@
   "bugs": {
     "url": "https://github.com/Cramenorn/RaptorSA/issues"
   },
-  "homepage": "https://github.com/Cramenorn/RaptorSA#readme"
+  "homepage": "https://github.com/Cramenorn/RaptorSA#readme",
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
 }
