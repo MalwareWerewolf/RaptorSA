@@ -26,17 +26,17 @@
     "kick":{
         "name":"kick",
         "group":"admin",
-        "desc":"Mute an user for a specific amount of time, you have to create a new role called mute to make the command work.",
-        "usage":"$mute [user] [ms]",
-        "example":"$mute @myuser#1234 1000"
+        "desc":"Kick an user from the server.",
+        "usage":"$kick [user] [reason]",
+        "example":"$kick @myUsername#0632 He did not respect the rules"
     },
 
     "mute":{
         "name":"mute",
         "group":"admin",
-        "desc":"Mute ",
-        "usage":"$kick [user] [reason]",
-        "example":"$kick @myUsername#0632 He did not respect the rules"
+        "desc":"Mute an user for a specific amount of time, you have to create a new role called mute to make the command work.",
+        "usage":"$mute [user] [ms]",
+        "example":"$mute @myuser#1234 1000"
     },
 
     "removerole":{
