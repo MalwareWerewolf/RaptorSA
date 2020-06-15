@@ -3,16 +3,12 @@ var request = require('request');
 var cheerio = require('cheerio');
 
 function getStatData(location , $){
-  
-    var selector = $('.stats-stat .value').eq(location).text();
-
+    var selector = $('.segment-stats .value').eq(location).text();
     var stat_array = $.parseHTML(selector);
-
     var stat = 0;
 
     if(stat_array == null || stat_array.lengh == 0){
         return -1;
-
     }else{
         stat = stat_array[0].data;
     }
@@ -21,15 +17,13 @@ function getStatData(location , $){
 }  
 
 exports.run = async (client, message, args) => {
-
-    var UR_L = "http://csgo.tracker.network/profile/" + args[0];
+    var UR_L = "https://tracker.gg/csgo/profile/steam/" + args[0] + "/overview";
 
     if(!args[0]){
         return message.channel.send("Please Enter a valid STEAMID64 or custom url");
     }
 
     request(UR_L, function(err, resp, body){
-
         $ = cheerio.load(body);
 
         var KD = getStatData(0, $);
@@ -37,16 +31,16 @@ exports.run = async (client, message, args) => {
             return message.channel.send("Invalid, make sure your profile is not private and you have entered a valid STEAMID64 or Custom URL!");
         }
 
-        var WIN = getStatData(1, $);
+        var KILLS = getStatData(1, $);
+        var WIN = getStatData(2, $);
+        var MVP = getStatData(3, $);
         var HS = getStatData(4, $);
-        var MONEY = getStatData(5, $);
-        var SCORE = getStatData(6, $);
-        var KILLS = getStatData(7, $);
-        var DEATHS = getStatData(8, $);
-        var MVP = getStatData(9, $);
-        var BS = getStatData(13, $);
-        var BD = getStatData(14, $);
-        var HR = getStatData(15, $);
+        var DEATHS = getStatData(5, $);
+        var SCORE = getStatData(8, $);
+        var MONEY = getStatData(9, $);
+        var BS = getStatData(12, $);
+        var BD = getStatData(13, $);
+        var HR = getStatData(14, $);
 
         var embed = new Discord.MessageEmbed()
             .setTitle("__***CSGO Stats***__")
@@ -63,10 +57,10 @@ exports.run = async (client, message, args) => {
             "Total Headshots: " + "__**" + HS + "**__" + "\n" +
             "Total Money Earned: " + "__**" + MONEY + "**__" + "\n" +
             "Total Hostages Rescued: " + "__**" + HR + "**__", true)
-            .addField("Powered by:", `**[csgo.tracker.network](http://csgo.tracker.network)**`, false)
+            .addField("Powered by:", `**[tracker.gg/csgo](http://tracker.gg/csgo)**`, false)
             .setTimestamp()
-            .setColor("0x#FF0000")
-        message.channel.send(embed);
+            .setColor("0x#FF0000");
 
+        message.channel.send(embed);
     })
 }
