@@ -20,7 +20,7 @@ exports.run = async (client, message, args) => {
     var UR_L = "https://tracker.gg/csgo/profile/steam/" + args[0] + "/overview";
 
     if(!args[0]){
-        return message.channel.send("Please Enter a valid STEAMID64 or custom url");
+        return message.channel.send("Please Enter a valid STEAMID64");
     }
 
     request(UR_L, function(err, resp, body){
@@ -28,7 +28,7 @@ exports.run = async (client, message, args) => {
 
         var KD = getStatData(0, $);
         if(KD == -1){
-            return message.channel.send("Invalid, make sure your profile is not private and you have entered a valid STEAMID64 or Custom URL!");
+            return message.channel.send("Invalid, make sure your profile is not private and you have entered a valid STEAMID64!");
         }
 
         var KILLS = getStatData(1, $);
