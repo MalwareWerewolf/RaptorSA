@@ -33,48 +33,7 @@ Some commands require an **Api Key** or a **Token** which can be find on these w
 
 # What do I need to make the bot work ?
 
-## To do
-
-Make a config.json file in the jsonFiles directory of the project and add:
-
-```json
-{
-  "name": "RaptorSA",
-  "version": "2.0.0",
-  "description": "put something here",
-  "main": "index.js",
-  "token": "Your-Bot-Token",
-  "author": "Cramenorn",
-  "prefix": "$"
-}
-```
-
-At this point you can use **docker** or install manually the **tools**.
-
-### Manual installation
-
-* You will need [python 2.7](https://www.python.org/downloads/) and [FFmpeg](https://www.ffmpeg.org/), **Discord.js now requires Node version greater than or equal to 12.0.0** .
-* Make a folder and git clone this repository: [RaptorSA.git](https://github.com/Cramenorn/RaptorSA.git).
-* Before typing `npm install`, you should check the **package.json** file. The installation process is different if you choose one of the two packages:
-    * If you are going to use the bot in a production environment you should use the `@discordjs/opus`, in this case you do not need to edit the package.json file. Before typing `npm install`, this package requires the C++ tools, on Windows 10 you simply need to download Visual Studio and install the [Windows desktop development with C++ tool](https://devblogs.microsoft.com/cppblog/windows-desktop-development-with-c-in-visual-studio/#installation).
-    * For testing purposes you should use the following package `"opusscript": "^0.0.7"` (change **@discordjs/opus** package with **opusscript**, they can't work together, you need to use one of them), you do not need to do anything in particular. You can directly install the packages as specified in the next step below.
-* Then type `npm install` to get the needed packages for the bot.
-* Check if **ytdl-core** is updated with the following command `npm outdated`, if the current version is not updated to the latest, type `npm update ytdl-core` and update the package.json file.
-* Edit json files in jsonFiles folder, you need a discord bot **Token** and various **Api Keys** to get the bot work.
-* Launch the `index.js` file.
-
-### Docker
-
-#### How do I install Docker ?
-
-The process is different on every OS, you can check the [official documentation](https://docs.docker.com/get-docker/) for more informations.
-
-#### How do I use Docker ?
-
-If you want to skip the previous steps you can use docker, in this way you do not need to install other tools on your computer. To use the container, run the following commands inside the RaptorSA folder:
-
-* `docker build -t raptorsa .`
-* `docker run raptorsa`
+See the [Commands](https://github.com/Cramenorn/RaptorSA/wiki/Installation) page.
 
 # CI/CD with Azure Pipelines
 
