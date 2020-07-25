@@ -14,3 +14,14 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: Dockerfile
+
+- task: UseNode@1
+  inputs:
+    version: '12.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm update ytdl-core
+    npm run build
+  displayName: 'npm install and build'
