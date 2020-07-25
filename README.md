@@ -33,7 +33,7 @@ Some commands require an **Api Key** or a **Token** which can be find on these w
 
 # What do I need to make the bot work ?
 
-See the [Commands](https://github.com/Cramenorn/RaptorSA/wiki/Installation) page.
+See the [installation](https://github.com/Cramenorn/RaptorSA/wiki/Installation) page.
 
 # CI/CD with Azure Pipelines
 
