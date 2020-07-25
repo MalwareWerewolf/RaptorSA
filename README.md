@@ -49,8 +49,6 @@ Make a config.json file in the jsonFiles directory of the project and add:
 }
 ```
 
-If you do not use the **azure pipelines** for CI/CD, you can delete the **azure-pipelines.yml** file.
-
 At this point you can use **docker** or install manually the **tools**.
 
 ### Manual installation
@@ -77,6 +75,19 @@ If you want to skip the previous steps you can use docker, in this way you do no
 
 * `docker build -t raptorsa .`
 * `docker run raptorsa`
+
+# CI/CD with Azure Pipelines
+
+## Do I need to use the Azure Pipelines ?
+
+No you don't, you can delete the **azure-pipelines.yml** file if you do not need it or you want to use another pipeline.
+
+## If I want to use the Azure Pipelines, what do I need to do ?
+
+* Create a repo on **Azure Devops**.
+* [Create a pipeline and connect Azure Devops to Github](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2)
+* Copy the pipeline YAML code from the **azure-pipelines.yml** file, and paste it into the YAML editor for your new pipeline on Azure Devops.
+* Save and run the pipeline.
 
 # Commands
 
