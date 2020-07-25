@@ -23,5 +23,4 @@ steps:
 - script: |
     npm install
     npm update ytdl-core
-    npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install'
