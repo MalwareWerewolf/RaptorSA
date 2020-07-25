@@ -3,6 +3,7 @@
 ![Issues](https://img.shields.io/github/issues/cramenorn/raptorsa.svg)
 ![Stars](https://img.shields.io/github/stars/cramenorn/raptorsa.svg)
 ![Forks](https://img.shields.io/github/forks/cramenorn/raptorsa.svg)
+[![Build Status](https://dev.azure.com/davidedlc97/RaptorSA/_apis/build/status/Cramenorn.RaptorSA?branchName=master)](https://dev.azure.com/davidedlc97/RaptorSA/_build/latest?definitionId=1&branchName=master)
 
 **RaptorSA** is a multi function bot, you can listen music, manage roles, get various informations and many other things. This Discord bot can be helpful for anyone who wants to learn how to make a discord.js bot, every command has it's own folder so it's more easy to read the entire project. I made this so new users can also look at the methods used for certain commands and get some ideas for their Discord bot.
 
@@ -47,6 +48,8 @@ Make a config.json file in the jsonFiles directory of the project and add:
   "prefix": "$"
 }
 ```
+
+If you do not use the **azure pipelines** for CI/CD, you can delete the **azure-pipelines.yml** file.
 
 At this point you can use **docker** or install manually the **tools**.
 
