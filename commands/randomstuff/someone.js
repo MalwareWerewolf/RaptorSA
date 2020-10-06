@@ -1,5 +1,3 @@
-const math = require('mathjs');
-
 const Discord = require('discord.js');
 
 var sToggle = true;
