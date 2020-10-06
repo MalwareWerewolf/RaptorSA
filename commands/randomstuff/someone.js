@@ -16,10 +16,10 @@ exports.run = (client, message, args) =>{
     if(args[0] === "toggle" && message.member.hasPermission('ADMINISTRATOR')) {
     sToggle = !sToggle;
         if(sToggle === true) {
-            message.channel.send("Enabled `$someone` globally.")
+            message.channel.send("Enabled `someone` globally.")
         }
         else {
-            message.channel.send("Disabled `$someone` globally. Command locked to ADMINS only.")
+            message.channel.send("Disabled `someone` globally. Command locked to ADMINS only.")
         }
     }
 }
