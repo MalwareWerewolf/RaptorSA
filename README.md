@@ -1,4 +1,4 @@
-# Super advanced discord bot ![alt text](https://i.imgflip.com/xu2ct.jpg)
+![alt text](https://ddolce.com/img/projects/RaptorSA.png)
 
 ![Issues](https://img.shields.io/github/issues/cramenorn/raptorsa.svg)
 ![Stars](https://img.shields.io/github/stars/cramenorn/raptorsa.svg)
