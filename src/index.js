@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require("./jsonFiles/config.json");
+const config = require("../config/config.json");
 const Enmap = require("enmap");
 const client = new Discord.Client();
 const fs = require('fs');

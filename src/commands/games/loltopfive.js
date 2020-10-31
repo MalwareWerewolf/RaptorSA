@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
         return message.channel.send("Please enter a valid Summoner ID!");
     }
     else{
-        fs.readFile(__dirname + '/../../jsonFiles/lolConfig.json', (err, dataJson) => {  
+        fs.readFile(__dirname + '/../../../config/lolConfig.json', (err, dataJson) => {  
             if (err) throw err;
             let lolApiKey = JSON.parse(dataJson);	
             getJSON("https://euw1.api.riotgames.com/lol/champion-mastery/v3/champion-masteries/by-summoner/"+args+"?api_key="+lolApiKey.apiKey, function(error, data){

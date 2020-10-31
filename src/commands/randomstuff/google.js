@@ -5,7 +5,7 @@ exports.run = (client, message, args) =>{
     const query = message.content.split(' ');
 
     try{
-        fs.readFile(__dirname + '/../../jsonFiles/googleConfig.json', (err, data) => {  
+        fs.readFile(__dirname + '/../../../config/googleConfig.json', (err, data) => {  
             if (err) throw err;
             let apiKeyCX = JSON.parse(data);		
            
@@ -15,7 +15,7 @@ exports.run = (client, message, args) =>{
                 cx: apiKeyCX.cx
             };		
             googleResults.runSample(options);
-            var poem = fs.readFileSync(__dirname + '/../../jsonFiles/googleResults.json', 'utf8');
+            var poem = fs.readFileSync(__dirname + '/../../../config/googleResults.json', 'utf8');
             
             message.channel.send(poem);
             

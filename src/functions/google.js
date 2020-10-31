@@ -4,8 +4,8 @@ const {google} = require('googleapis');
 const customsearch = google.customsearch('v1');
 const fs = require("fs");
 
-var jsonSaveCS = __dirname + '/../jsonFiles/customSearch.json';
-var googleFile = __dirname + '/../jsonFiles/googleResults.json';
+var jsonSaveCS = __dirname + '/../../config/customSearch.json';
+var googleFile = __dirname + '/../../config/googleResults.json';
 var googleFileChangeVal = require(googleFile);
 
 async function runSample (options) {

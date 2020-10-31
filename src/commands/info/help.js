@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
     }
 
     else if(command[1] != undefined){ 
-        fs.readFile(__dirname + '/../../jsonFiles/commands.json', (err, dataJson) => {  
+        fs.readFile(__dirname + '/../../../config/commands.json', (err, dataJson) => {  
             if (err) throw err;
             let helpMe = JSON.parse(dataJson);
             let commandName = command[1];
