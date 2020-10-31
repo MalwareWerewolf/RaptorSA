@@ -9,4 +9,5 @@ RUN apt-get install -y python2.7 python-pip
 RUN npm install
 RUN npm update ytdl-core
 COPY . /app
+WORKDIR /src
 CMD ["node", "index.js"]
