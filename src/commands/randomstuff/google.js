@@ -1,4 +1,4 @@
-const googleResults = require(__dirname+'/../../functions/google.js');
+const googleResults = require(__dirname+'/../../../libs/google.js');
 const fs = require('fs');
 
 exports.run = (client, message, args) =>{

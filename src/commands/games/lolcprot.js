@@ -1,5 +1,5 @@
 const Discord = module.require('discord.js');
-const championName = require(__dirname+'/../../functions/lolcpid.js');
+const championName = require(__dirname+'/../../../libs/lolcpid.js');
 const fs = require('fs');
 var getJSON = require('get-json');
 
