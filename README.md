@@ -1,4 +1,4 @@
-![alt text](http://ddolce.com/images/projects/RaptorSA.png)
+![alt text](https://malwarewerewolf.com/images/projects/RaptorSA.png)
 
 ![Issues](https://img.shields.io/github/issues/cramenorn/raptorsa.svg)
 ![Stars](https://img.shields.io/github/stars/cramenorn/raptorsa.svg)
