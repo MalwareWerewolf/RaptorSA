@@ -32,5 +32,4 @@ exports.run = (client, message, args) => {
     else{
         return message.channel.send("I could not set my status please type one of the following status: idle, online, invisible, dnd (do not disturb)");
     }
-
 }
