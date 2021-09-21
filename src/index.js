@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
-const config = require("../config/config.json");
 const Enmap = require("enmap");
 const client = new Discord.Client();
 const fs = require('fs');
 
-client.config = config;
+client.config = require("../config/config.json");
 
 
 
@@ -31,6 +30,6 @@ client.commands.set(command.name, command);
 }
 //checks if there is a file inside a folder inside the commands folder 
 
-client.login(config.token);
+client.login(client.config.token);
 
 
